@@ -20,7 +20,7 @@
   <a class="name" href="#">Dmitry Hodosok</a>
   <nav aria-label="Sections">
     <a href="#results">Results</a>
-    <a href="#apartyradar">ApartyRadar</a>
+    <a href="#apartyradar">Side projects</a>
     <a href="#launches">Launches</a>
     <a href="#writing">Writing</a>
     <a href="#contact">Contact</a>
@@ -30,7 +30,7 @@
 <main id="main">
 
 <section class="intro wrap">
-  <h1>I build B2B products in attribution and affiliate tracking — and a rental search engine on the side.</h1>
+  <h1>I build B2B products in attribution and affiliate tracking — and search engines for life in Poland on the side.</h1>
   <p class="lede">Senior Product Manager at <a href="https://affise.com">Affise</a>, working across iGaming, e-commerce and influencer marketing. 13 years in software: nine in customer success, the last four in product. Based in Warsaw.</p>
   <p class="links">
     <a class="btn" href="https://www.linkedin.com/in/dmitryhodosok/">LinkedIn</a>
@@ -113,6 +113,34 @@
         <li>AI extraction on a pooled roster of free‑tier LLM providers with fast and slow lanes and per‑provider daily limits.</li>
         <li>Three surfaces: the web app, the <a href="https://t.me/aparty_pl_bot">@aparty_pl_bot</a> Telegram bot, and an <a href="https://play.google.com/store/apps/details?id=pl.apartyradar.app">Android app</a>.</li>
         <li>Growth through community replies to apartment‑seekers on Threads; free forever for renters, monetised through relocation‑service partnerships.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="ofertyradar" class="wrap side" aria-labelledby="or-h">
+  <div class="side-head">
+    <h2 id="or-h">OfertyRadar</h2>
+    <p class="kicker">Side project · solo · in beta · <a href="https://ofertyradar.pl">ofertyradar.pl</a></p>
+  </div>
+  <p class="lede">The same idea applied to jobs: one search across Poland's job boards, built for people whose Polish isn't perfect yet. Browse without an account, sign in with Telegram to save a search, and get new matching vacancies as Telegram messages.</p>
+
+  <div class="cols">
+    <div>
+      <h3>What it does</h3>
+      <ul>
+        <li>Aggregates Pracuj.pl, OLX, Just Join IT, RocketJobs and selected public Telegram channels.</li>
+        <li>Filters by the language the posting is written in, work mode, city and salary in PLN.</li>
+        <li>Matching is word‑prefix, case‑ and diacritic‑insensitive, and handles Cyrillic, so “менеджер” and “kierownik” searches both work.</li>
+        <li>Interface in Polish, English, Russian and Ukrainian.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>How I built and run it</h3>
+      <ul>
+        <li>Sources are crawled roughly every 15 minutes; alerts go out only for postings that are new since the search was saved.</li>
+        <li>Telegram login and bot commands to pause or resume all alerts.</li>
+        <li>Started from a job‑board scraping and LLM‑matching pipeline I built earlier, extended with a Jooble API integration and ATS‑feed discovery.</li>
       </ul>
     </div>
   </div>
